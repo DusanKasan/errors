@@ -82,7 +82,7 @@ type E struct {
 func (e *E) Error() string {
 	msg := fmt.Sprintf("%v", e.code)
 	if len(e.data) > 0 {
-		msg = msg + fmt.Sprintf(", data: %#v", e.data)
+		msg = msg + fmt.Sprintf(", data: %v", e.data)
 	}
 
 	return msg
